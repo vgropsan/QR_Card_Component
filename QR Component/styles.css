@@ -1,0 +1,68 @@
+:root {
+    --primario: hsl(228, 45%, 44%);
+    --gris: #858585;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: #D6E1F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+.card {
+    width: 90%;
+    max-width: 320px; /* Ajusta el tamaño máximo de la tarjeta */
+    height: auto;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Añade padding para un mejor diseño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para un mejor efecto visual */
+}
+
+.card__image {
+    width: 100%;
+    border-radius: 1rem;
+    background-image: url(images/image-qr-code.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100%; /* Mantén la proporción cuadrada */
+    margin-bottom: 2rem; /* Añade un margen inferior para separar la imagen del contenido */
+}
+
+.card__text {
+    text-align: center;
+}
+
+.card__text h1 {
+    font-size: 1.8rem;
+    color: var(--primario);
+    margin-bottom: 1rem;
+}
+
+.card__text p {
+    font-size: 1.4rem;
+    color: var(--gris);
+}
