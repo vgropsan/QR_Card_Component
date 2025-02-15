@@ -1,0 +1,144 @@
+/*****************************************
+****        RESETING CSS CODE         ****
+*****************************************/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+/*****************************************
+****    END OF RESETING CSS CODE      ****
+*****************************************/
+
+
+/* my own code begins here */
+/* General styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Some CSS Predefined Variables */
+:root{
+    --white:hsl(0, 0%, 100%);
+    --slate300:hsl(212, 45%, 89%);
+    --slate500:hsl(216, 15%, 48%);
+    --slate900:hsl(218, 44%, 22%);
+    --txtfamily:"Outfit", serif;
+}
+/* Main Section */
+.contenedor{
+    background-color: var(--slate300);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* White Container inside Main*/
+.contenedor-qr{
+    width: 35vh;
+    height: 55vh;
+    background-color: var(--white);
+    border-radius: 2vh;
+}
+/* QR Image inside Container */
+.contenedor-qr__img{
+  width: 92%;
+  height: 55%;
+  background-image: url(../images/image-qr-code.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1vh;
+  margin: 1.5vh auto;
+}
+.contenedor-qr__txt{
+  font-family: var(--txtfamily);
+  text-align: center;
+  color: var(--slate500);
+  width: 100%;
+}
+.encabezado{
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--slate900);
+  justify-content: center;
+  margin: 2vh 2vh;
+}
+.parrafo{
+  font-weight: 400;
+  font-size: 15px;
+  margin: 2vh 3.5vh;
+  margin-bottom: 3vh;
+}
+
+/* Attribution styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--slate500);
+  margin-top: 2vh;
+}
+
+.attribution a {
+  color: var(--slate900);
+  text-decoration: none;
+}
+
+/* Mobile View *
+@media (min-width: 375px) {
+    
+}
+/* Computer View *
+@media (min-width: 1440px) {
+
+} */

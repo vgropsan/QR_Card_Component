@@ -3,29 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Favicon Image -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <!-- End of favicon Image -->
+  <!-- Google Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!-- End of Google Fonts -->
+   <!-- Normalize CSS -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <!-- End of Normalize CSS -->
+   <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- End of Style CSS -->
   <title>Frontend Mentor | QR code component</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div class="card">
-    <div class="card__image"></div>
-    <div class="card__text">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-    </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Valentin Gropsan</a>.
-  </div>
+  <main class="contenedor">
+      <div class="contenedor-qr">
+        <div class="contenedor-qr__img"></div>
+        <div class="contenedor-qr__txt">
+          <p class="contenedor-qr__txt__p encabezado">Improve your front-end skills by building projects</p>
+          <p class="contenedor-qr__txt__p parrafo">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/profile/vgropsan" target="_blank">Frontend Mentor Profile</a>.<br> 
+        Follow me on Git Hub <a href="https://github.com/vgropsan">Valentin Gropsan</a>.
+      </div>
+  </main>  
 </body>
 </html>
